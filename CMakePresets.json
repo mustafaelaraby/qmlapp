@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "configurePresets": [
+      {
+        "name": "vcpkg",
+        "generator": "Ninja",
+        "binaryDir": "${sourceDir}/build",
+        "cacheVariables": {
+          "CMAKE_TOOLCHAIN_FILE":"$env{VCPKG_TOOLCHAIN_FILE}",
+          "CMAKE_BUILD_TYPE": "Debug",
+          "VCPKG_TARGET_TRIPLET":"x64-mingw-static"
+        }
+      }
+      
+    ]
+  }
